@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  
   box-sizing: border-box;
 }
 
@@ -69,6 +70,7 @@ input:focus, textarea:focus, select:focus {
 
 @media (min-width:1700px) {
 	main .container {
+    background-color: #1BA161;
 		max-width: 100%;
 		padding: 0 150px;
 	}
@@ -545,7 +547,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  background-image: url('./assets/img/headerRect.svg');
+  background-image: url('./assets/img/footerRect.svg');
   padding: 300px 0 0px 0;
 }
 
@@ -558,4 +560,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.project_panel {
+ font-size: 16px;
+ height: fit-content;
+ font-weight: 600;
+ padding: 16px;
+ color: #ffffff;
+ background-color: #01170da7;
+ border-radius: 8px;
+}
+
+
+.panel_text{
+  margin-left: 20%;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 100;
+  color: #ffffff;
+}
+.panel_img{
+  width: 50%;
+}
+
+
+.testnet  {
+  text-align: center;
+  font-weight: 800;
+  
+  font-size: 32px;
+  color: #ffffff;
+  background-color: #1ba16000;
 }

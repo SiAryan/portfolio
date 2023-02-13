@@ -95,7 +95,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image" src={headerRect}></img>
+      <img className="background-image" src={footerRect}></img>
     </section>
   )
 }

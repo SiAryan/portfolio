@@ -7,6 +7,7 @@ import navIcon2 from "../assets/img/github.svg";
 import navIcon3 from "../assets/img/twitter.svg";
 import navIcon4 from '../assets/img/linkedin.svg';
 import headerImg from "../assets/img/header-img.svg";
+import navIcon5 from '../assets/img/email.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -30,8 +31,9 @@ export const Footer = () => {
                 <a href="https://github.com/SiAryan"target="_blank"><img src={navIcon2} alt="Github" /></a>
                 {/* <a href="https://twitter.com/nodexploit" target="_blank"><img src={navIcon1} alt="Twitter" /></a> */}
                 <a href="https://www.linkedin.com/in/aryan-enguofa/" target="_blank"><img src={navIcon4} alt="LinkedIn" /></a>
+                <a href="mailto: asingh2@ualberta.ca" target="_blank"><img src={navIcon5} alt="LinkedIn" /></a>
                 </div>
-            {/* <p>Made with ❤️ NodeX | WannaCry</p> */}
+            <p>Made by Aryan Singh</p>
           </Col>
         </Row>
       </Container>
