@@ -1,10 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/100647-computer-guy-1.json";
+import headerImg from "../assets/img/logo.svg";
 import { ArrowRightCircle, Quote } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import Lottie from 'react-lottie';
+import * as animationData from "../assets/img/computer-guy-1.json";
+import AnimationPage from './AnimationPage';
 
 
 export const Banner = () => {
@@ -71,7 +74,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <AnimationPage/>
                 </div>}
             </TrackVisibility>
           </Col>

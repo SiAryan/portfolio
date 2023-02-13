@@ -62,7 +62,7 @@ export const NavBar = () => {
                 {/* <a href="https://discordapp.com/users/928575843641479198" target="_blank"><img src={navIcon3} alt="Discord" /></a> */}
                 <a href="https://github.com/SiAryan"target="_blank"><img src={navIcon2} alt="Github" /></a>
                 {/* <a href="https://twitter.com/nodexploit" target="_blank"><img src={navIcon1} alt="Twitter" /></a> */}
-                <a href="https://youtube.com" target="_blank"><img src={navIcon4} alt="Youtube" /></a>
+                <a href="https://www.linkedin.com/in/aryan-enguofa/" target="_blank"><img src={navIcon4} alt="LinkedIn" /></a>
                 </div>
                 </span>
           </Navbar.Collapse>
