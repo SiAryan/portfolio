@@ -66,7 +66,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Aryan ⚡`} </h1>
                   <h4>Software Developer, Creative and Music Lover!</h4>
                   <br></br>
-                  <i><q></q></i>
+                  {/* <i><q></q></i> */}
               </div>}
             </TrackVisibility>
           </Col>
