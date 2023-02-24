@@ -89,17 +89,20 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle> */}
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+          <Nav className="ms-auto">
               {/* <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link> 
-              <Nav.Link href="https://blog.nodex.codes" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Blog</Nav.Link>
               <Nav.Link href="https://stake.nodex.codes" target="_blank" className={activeLink === 'stake' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('stake')}>Stake</Nav.Link>
               <Nav.Link href="https://explorer.nodex.codes" target="_blank" className={activeLink === 'stake' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('stake')}>Explorer</Nav.Link>              
               <Nav.Link href="https://jumper.nodex.codes" target="_blank" className={activeLink === 'jumper' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('stake')}>Jumper</Nav.Link>                            
               <Nav.Link href="#testnet" className={activeLink === 'skill' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Testnet</Nav.Link>
               <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>Team</Nav.Link> */}
-
+              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Professional history</Nav.Link>
+              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>About me</Nav.Link>
+              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Interests</Nav.Link>
+              
             </Nav>
-            <span className="navbar-text">
+            
+            <div className='spacer'> <span className="navbar-text">
               <div className="social-icon">
                 {/* <a href="https://discordapp.com/users/928575843641479198" target="_blank"><img src={navIcon3} alt="Discord" /></a> */}
                 <a href="https://github.com/SiAryan"target="_blank"><img src={navIcon2} alt="Github" /></a>
@@ -108,7 +111,10 @@ export const NavBar = () => {
                 <a href="mailto: asingh2@ualberta.ca" target="_blank"><img src={navIcon5} alt="LinkedIn" /></a>
                 
                 </div>
-                </span>
+                </span>    </div>
+            
+            
+              
           </Navbar.Collapse>
         </Container>
       </Navbar>

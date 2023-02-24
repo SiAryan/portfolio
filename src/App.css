@@ -112,8 +112,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 span.navbar-text {
-    display: flex;
-    align-items: center;
+  align-self: right;
 }
 .social-icon {
     display: inline-block;
@@ -592,4 +591,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 32px;
   color: #ffffff;
   background-color: #1ba16000;
+}
+
+.spacer{
+ margin-inline: 900px 0;
 }
