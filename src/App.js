@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
+import { Main } from "./components/Main.js";
 import { Banner } from "./components/Banner";
 import { Testnet } from "./components/Testnet";
 import { Team } from "./components/Team";
@@ -13,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      <Main />
+      {/* <Banner /> */}
       {/* <Testnet /> */}
       {/* <Team/> */}
       {/* <Projects /> */}
