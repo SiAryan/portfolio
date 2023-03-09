@@ -54,12 +54,12 @@ export const Testnet = () => {
       MRI spinal transducer
       <div class="panel_text">Developing a transducer device to stimulate patient spines for MRI data collection. Device operation is controlled through web application built from NodeRED(nodejs)</div>
       </div>
-      <br></br>
+      {/* <br></br>
       <div class="project_panel">Rocket App</div>
       <br></br>
       <div class="project_panel">Badminton Bot</div>
       <br></br>
-      <div class="project_panel">To The Wormhole</div>
+      <div class="project_panel">To The Wormhole</div> */}
       
        
         {/* </div> */}

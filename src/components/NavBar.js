@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavLink } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/twitter.svg';
 import navIcon2 from '../assets/img/github.svg';
@@ -13,6 +13,9 @@ import headerImg from "../assets/img/header-img.svg";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
+import { Banner } from './Banner';
+import { PHistory } from './Phistory';
 
 // export const Testnet = () => {
 //   const responsive = {
@@ -36,8 +39,16 @@ import {
 //   };
 // }
 
-export const NavBar = () => {
 
+
+export const NavBar = () => {
+  const [content, setContent] = useState(() => Banner)
+
+  function handleClick() {
+    console.log("handling click")
+    setContent(() => Banner)
+  }
+  const [isOpen, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const responsive = {
@@ -78,6 +89,8 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  
+
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -96,10 +109,11 @@ export const NavBar = () => {
               <Nav.Link href="https://jumper.nodex.codes" target="_blank" className={activeLink === 'jumper' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('stake')}>Jumper</Nav.Link>                            
               <Nav.Link href="#testnet" className={activeLink === 'skill' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Testnet</Nav.Link>
               <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>Team</Nav.Link> */}
-              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Professional history</Nav.Link>
-              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>About me</Nav.Link>
-              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Interests</Nav.Link>
-              
+              {/* <Nav.Link to="/" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/professionalHistory')}>Professional history</Nav.Link>
+              <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("/About")}>About me</Nav.Link>
+               */}
+              <Nav.Link href="/portfolio" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} >Home</Nav.Link>
+              <Nav.Link href="/portfolio/professionalHistory" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'}>Professional History</Nav.Link>
             </Nav>
             
             <div className='spacer'> <span className="navbar-text">
