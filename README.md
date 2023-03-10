@@ -1,2 +1,2 @@
-Creating my portfolio using React and node.js 
-visit https://siaryan.github.io
+Creating my portfolio using React and node.js. 
+Visit https://siaryan.github.io
