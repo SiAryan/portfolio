@@ -58,8 +58,11 @@ export const PHistory = () => {
   return (
     <section className="banner" id="home">
       <Container>
-    
+
       <section className="testnet" id="testnet">
+      Professional History
+      <br></br>
+      <br></br>
       <div class="project_panel">Tetra Tech (May 2021 - December 2021)
       <hr></hr>
       <div class="panel_text">&#x2022; Developed web based applications that visualized roadway survey data. Web applications displayed LiDAR point clouds and panoramic images on a 3D viewing space.</div>
