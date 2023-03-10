@@ -16,23 +16,27 @@ import {
   useRoutes,
 } from "react-router-dom";
 
-const App = () => {
-  let routes = useRoutes([
-    { path: "/portfolio", element: <Banner /> },
-    { path: "/portfolio/professionalHistory", element: <PHistory /> },
-    // ...
-  ]);
-  return routes;
-};
+
+// const App = () => {
+//   let routes = useRoutes([
+//     { path: "/portfolio", element: <Banner /> },
+//     { path: "/portfolio/professionalHistory", element: <PHistory /> },
+//     // ...
+//   ]);
+//   return routes;
+// };
 
 
 
-function AppWrapper() {
+function App() {
   return (
     <div className="App">
       <NavBar />
       <Router>
-      <App />
+      <Routes>
+        <Route path="/portfolio" element={<Banner/ >}/>
+        <Route path="/portfolio/professionalHistory" element={<PHistory />}/>
+      </Routes>
       </Router>
       {/* <Main /> */}
       {/* <Banner /> */}
@@ -45,4 +49,4 @@ function AppWrapper() {
   );
 }
 
-export default AppWrapper;
+export default App;
