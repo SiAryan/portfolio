@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.2f4085bd.chunk.css",
-  "main.js": "/portfolio/static/js/main.f44e3f4e.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.f44e3f4e.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.6fba38e0.chunk.css",
+  "main.js": "/portfolio/static/js/main.63b0daec.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.63b0daec.chunk.js.map",
   "static/js/1.fdeb34be.chunk.js": "/portfolio/static/js/1.fdeb34be.chunk.js",
   "static/js/1.fdeb34be.chunk.js.map": "/portfolio/static/js/1.fdeb34be.chunk.js.map",
   "static/css/2.7d8acaaa.chunk.css": "/portfolio/static/css/2.7d8acaaa.chunk.css",
@@ -14,14 +14,14 @@
   "static/media/email.svg": "/portfolio/static/media/email.fb9880a0.svg",
   "static/media/App.css": "/portfolio/static/media/CentraNo2-Bold.4ea3794d.ttf",
   "static/media/footerRect.svg": "/portfolio/static/media/footerRect.50b98f02.svg",
-  "static/media/bootstrap.min.css": "/portfolio/static/media/glyphicons-halflings-regular.e18bbf61.ttf",
+  "static/media/bootstrap.min.css": "/portfolio/static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/twitter.svg": "/portfolio/static/media/twitter.080ad0d3.svg",
   "static/media/logo.svg": "/portfolio/static/media/logo.731eff2a.svg",
   "static/media/discord.svg": "/portfolio/static/media/discord.85af7c9f.svg",
   "static/media/header-img.svg": "/portfolio/static/media/header-img.e8257f2f.svg",
+  "static/css/main.6fba38e0.chunk.css.map": "/portfolio/static/css/main.6fba38e0.chunk.css.map",
   "static/css/2.7d8acaaa.chunk.css.map": "/portfolio/static/css/2.7d8acaaa.chunk.css.map",
-  "static/css/main.2f4085bd.chunk.css.map": "/portfolio/static/css/main.2f4085bd.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.257affc983880f05ab886e767133a505.js": "/portfolio/precache-manifest.257affc983880f05ab886e767133a505.js",
+  "precache-manifest.5ce5fdb9f769b78f8de5c00a6c763823.js": "/portfolio/precache-manifest.5ce5fdb9f769b78f8de5c00a6c763823.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
