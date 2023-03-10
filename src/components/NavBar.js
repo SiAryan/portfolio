@@ -1,19 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, NavLink } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/twitter.svg';
 import navIcon2 from '../assets/img/github.svg';
 import navIcon3 from '../assets/img/discord.svg';
 import navIcon4 from '../assets/img/linkedin.svg';
 import navIcon5 from '../assets/img/email.svg';
-import { HashLink } from 'react-router-hash-link';
-
-import headerImg from "../assets/img/header-img.svg";
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+import styled  from "styled-components";
 import { Banner } from './Banner';
 import { PHistory } from './Phistory';
 
@@ -39,7 +33,16 @@ import { PHistory } from './Phistory';
 //   };
 // }
 
-
+const LinkStyled = styled(Link)`
+font-weight: 700;
+color: #fff;
+padding: 18px 34px;
+font-size: 18px;
+margin-left: 18px;
+position: relative;
+background-color: transparent;
+transition: 0.3s ease-in-out;
+`;
 
 export const NavBar = () => {
   const [content, setContent] = useState(() => Banner)
@@ -92,7 +95,7 @@ export const NavBar = () => {
   
 
   return (
-    <Router>
+    
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           {/* <Navbar.Brand href="/">
@@ -112,15 +115,16 @@ export const NavBar = () => {
               {/* <Nav.Link to="/" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/professionalHistory')}>Professional history</Nav.Link>
               <Nav.Link href="" target="_blank" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("/About")}>About me</Nav.Link>
                */}
-              <Nav.Link href="/portfolio" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} >Home</Nav.Link>
-              <Nav.Link href="/portfolio/professionalHistory" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'}>Professional History</Nav.Link>
+              {/* {/* <Nav.Link href="/portfolio" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} >Home</Nav.Link> */}
+              <LinkStyled to="/" >Home</LinkStyled> 
+              <LinkStyled to="/portfolio/professionalHistory" >Professional History </LinkStyled> 
+            
             </Nav>
             
             <div className='spacer'> <span className="navbar-text">
               <div className="social-icon">
-                {/* <a href="https://discordapp.com/users/928575843641479198" target="_blank"><img src={navIcon3} alt="Discord" /></a> */}
+                
                 <a href="https://github.com/SiAryan"target="_blank"><img src={navIcon2} alt="Github" /></a>
-                {/* <a href="https://twitter.com/nodexploit" target="_blank"><img src={navIcon1} alt="Twitter" /></a> */}
                 <a href="https://www.linkedin.com/in/aryan-enguofa/" target="_blank"><img src={navIcon4} alt="LinkedIn" /></a>
                 <a href="mailto: asingh2@ualberta.ca" target="_blank"><img src={navIcon5} alt="LinkedIn" /></a>
                 
@@ -132,6 +136,6 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
+
   )
 }
